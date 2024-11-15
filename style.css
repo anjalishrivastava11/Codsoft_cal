@@ -1,0 +1,69 @@
+/* CSS for styling the calculator */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+}
+html,body{
+    height: 100%;       
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    color: #fff;
+    text-align: right;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.button.operator {
+    background-color: #f08a24;
+}
+
+.button.number, .button.clear {
+    background-color: #555;
+}
+
+.button.equals {
+    grid-column: span 4;
+    background-color: #0a74da;
+}
